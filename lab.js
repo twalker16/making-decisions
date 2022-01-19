@@ -138,13 +138,32 @@ while(score < passingScore){
 
 */
 
-//CODE HERE
+let changeMyMind = true
+
+if(changeMyMind === true){
+  changeMyMind = false
+  console.log(`${changeMyMind}`)
+}else{
+  changeMyMind = true
+  console.log(`${changeMyMind}`)
+}
+
+if(changeMyMind === true){
+  changeMyMind = false
+  console.log(`${changeMyMind}`)
+}else{
+  changeMyMind = true
+  console.log(`${changeMyMind}`)
+}
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-//CODE HERE
+changeMyMind = !changeMyMind
+console.log(`${changeMyMind}`)
 
+changeMyMind = !changeMyMind
+console.log(`${changeMyMind}`)
 
 
 ////////// ADVANCED PROBLEMS //////////
@@ -154,4 +173,11 @@ while(score < passingScore){
 let z = 5
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
-//CODE HERE
+while(z > 0){
+  countdown = z
+  while(countdown > 0){
+    console.log(`${countdown}`)
+    countdown--
+  }
+  z--
+}
